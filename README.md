@@ -4,7 +4,7 @@
 Projects are numbered in development order. Higher numbers represent newer projects that introduce new backend tools, concepts, and increasing levels of complexity throughout my learning journey.
 
 
-# Hotel Reservation Management System (Website)
+# Hotel Reservation Management Website
 
 A full-stack hotel reservation web application developed with **Django (MVT Architecture)**. The project provides a complete hotel management experience, including room management, secure user authentication, reservation processing, reservation validation, and an administration panel.
 
