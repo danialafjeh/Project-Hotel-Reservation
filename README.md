@@ -12,8 +12,6 @@ A full-stack hotel reservation web application developed with **Django (MVT Arch
 
 The frontend template is based on a modern design from **themewagon.com**, which has been extensively customized and extended with additional pages and backend integration.
 
-‼️ Website's language is in English.
-
 ---
 
 # Technologies
