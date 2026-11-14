@@ -300,6 +300,8 @@ Major concepts practiced include:
 * Business Logic Implementation (Main Purpose)
 * Reservation Conflict Detection (Main Purpose)
 * Date Validation (Main Purpose)
+* Redis caching and invalidation (Main Purpose)
+* Docker
 * Django MVT Architecture
 * User Authentication
 * Authorization
