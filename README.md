@@ -6,7 +6,7 @@
 
 Complexity : Advanced
 
-A full-stack hotel reservation web application developed with **Django (MVT Architecture)**. The project provides a complete hotel management experience, including room management, secure user authentication, reservation processing, reservation validation, and an administration panel.
+A hotel reservation web application with frontend and backend developed with **Django (MVT Architecture)**. The project provides a complete hotel management experience, including room management, secure user authentication, reservation processing, reservation validation, and an administration panel.
 
 The frontend template is based on a modern design from **themewagon.com**, which has been extensively customized and extended with additional pages and backend integration.
 
