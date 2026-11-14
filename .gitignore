@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+denv/
+
+# Django
+*.log
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Django Static Files
+staticfiles/
+static_root/
+
+# Media Files
+# Keep uploaded media files in Git for the demo project.
+# media/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Build and Distribution
+build/
+dist/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary Files
+*.tmp
+*.bak
+*.orig
+
+# Git
+*.patch

@@ -1,0 +1,71 @@
+services:
+  web:
+    build: .
+    container_name: hotel_django
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      SECRET_KEY: "django-insecure-sample-key-for-development"
+      DEBUG: "True"
+      ALLOWED_HOSTS: "localhost,127.0.0.1"
+
+      POSTGRES_DB: hotel_db
+      POSTGRES_USER: hotel_user
+      POSTGRES_PASSWORD: hotel_password
+
+      DB_HOST: db
+      DB_PORT: 5432
+
+      REDIS_URL: redis://redis:6379/1
+
+    volumes:
+      - .:/app
+
+    depends_on:
+      db:
+        condition: service_healthy
+
+      redis:
+        condition: service_healthy
+
+
+  db:
+    image: postgres:17-alpine
+    container_name: hotel_postgres
+
+    environment:
+      POSTGRES_DB: hotel_db
+      POSTGRES_USER: hotel_user
+      POSTGRES_PASSWORD: hotel_password
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hotel_user -d hotel_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+
+  redis:
+    image: redis:7-alpine
+    container_name: hotel_redis
+
+    command: redis-server --appendonly yes
+
+    volumes:
+      - redis_data:/data
+
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+
+volumes:
+  postgres_data:
+  redis_data:

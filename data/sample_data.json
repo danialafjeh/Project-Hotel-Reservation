@@ -1,0 +1,409 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$KtSLD4esJcLsbCMPLMkA1H$B+a4yN4mHOp3vwpYPUOu7dhapcDOsK24SCem83T9QY8=",
+    "last_login": "2026-07-01T08:04:24.829Z",
+    "is_superuser": true,
+    "username": "danialmanager",
+    "first_name": "Danial",
+    "last_name": "Afjeh",
+    "email": "managerdany@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-06-25T10:06:26Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$OMYGk24aMlRfKGOorGA5vx$htTKg0/ryil2lnP1WwalCiRknp4M06v7nFZG8orRZt0=",
+    "last_login": "2026-07-01T15:27:24.470Z",
+    "is_superuser": false,
+    "username": "juudyyy2077",
+    "first_name": "Judy",
+    "last_name": "Alvarez",
+    "email": "judyalvrez@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-29T08:28:10.605Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$gjFutwUXujreuHF6hepYrP$XWfJR48NbfFXbn9aY4bSwwORFRWh8fqrtd1yEwf0VNQ=",
+    "last_login": "2026-11-14T08:22:45.245Z",
+    "is_superuser": true,
+    "username": "dany",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-11-14T08:22:22.811Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "main.hotelinfo",
+  "pk": 1,
+  "fields": {
+    "name": "Hotel Daniel",
+    "description": "Hotel Daniel is a symbol of the perfect blend of modern architecture, exceptional hospitality, and premium services, located in the heart of one of the world's most vibrant and contemporary cities. Designed to provide a unique urban accommodation experience, our hotel offers guests a luxurious, comfortable, and memorable stay from the moment they arrive.\r\n\r\nAs soon as guests step into our spacious and elegantly designed lobby, they are welcomed by a sophisticated atmosphere, modern interiors, refined lighting, and a dedicated team of professionals committed to delivering outstanding service. Thanks to its prime location, Hotel Daniel provides convenient access to major business districts, popular tourist attractions, shopping centers, renowned restaurants, and public transportation networks, making it an ideal choice for both business travelers and tourists.\r\n\r\nOur rooms and suites are thoughtfully designed according to the latest hospitality standards, combining comfort, style, and modern technology. Each accommodation unit is equipped with high-speed internet access, smart climate control systems, modern entertainment facilities, dedicated workspaces, and a wide range of premium amenities to ensure a relaxing and enjoyable stay.\r\n\r\nHotel Daniel also offers an extensive selection of leisure and business facilities, including elegant restaurants serving international cuisine, cozy cafés, fully equipped conference and meeting rooms, a modern fitness center, comfortable lounge areas, and 24/7 reception and guest support services. Every aspect of our hotel has been carefully designed to meet the diverse needs of our guests and provide an experience that goes beyond traditional hospitality.\r\n\r\nAt Hotel Daniel, we believe that every journey tells a unique story. For this reason, we are committed to delivering personalized services, maintaining the highest standards of comfort and security, and paying close attention to every detail. Our dedication to quality, guest satisfaction, and continuous innovation has established Hotel Daniel as a trusted destination for travelers seeking luxury, convenience, and exceptional service in the city center.\r\n\r\nWhether you are visiting for a short business trip, a family vacation, or an extended stay, Hotel Daniel is ready to welcome you with world-class hospitality and create an unforgettable experience.",
+    "address": "Hotel Daniel, Grand Avenue, Business & Financial District, Tehran, Iran.",
+    "phone_1": "+98 093312345678",
+    "phone_2": "+98 091912345678",
+    "phone_3": "+98 092112345678",
+    "email_1": "hoteldaniel@example.com",
+    "email_2": "danielsupport@example.com",
+    "email_3": "hoteldanielhelp@example.com"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 1,
+  "fields": {
+    "section": "Grand Lobby",
+    "image": "upload/gallery/GrandLobby.png",
+    "created_at": "2026-06-25T14:57:21.879Z"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 2,
+  "fields": {
+    "section": "Reception Desk",
+    "image": "upload/gallery/ReceptionDesk.png",
+    "created_at": "2026-06-25T15:28:07.226Z"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 3,
+  "fields": {
+    "section": "Water Foundtain",
+    "image": "upload/gallery/WaterFountain.png",
+    "created_at": "2026-06-25T15:28:33.034Z"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 4,
+  "fields": {
+    "section": "Pool Part 1",
+    "image": "upload/gallery/banner2.jpg",
+    "created_at": "2026-06-25T15:36:44.565Z"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 5,
+  "fields": {
+    "section": "Pool part 2",
+    "image": "upload/gallery/banner3.jpg",
+    "created_at": "2026-06-25T15:37:05.469Z"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 6,
+  "fields": {
+    "section": "Yard",
+    "image": "upload/gallery/about.png",
+    "created_at": "2026-06-25T15:42:08.827Z"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 7,
+  "fields": {
+    "section": "Pool Part 3",
+    "image": "upload/gallery/blog1.jpg",
+    "created_at": "2026-06-25T15:44:32.217Z"
+  }
+},
+{
+  "model": "main.hotelgallery",
+  "pk": 8,
+  "fields": {
+    "section": "Hall",
+    "image": "upload/gallery/blog2.jpg",
+    "created_at": "2026-06-25T15:45:26.563Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 1,
+  "fields": {
+    "name": "Family Lounge Suite",
+    "room_number": "D411",
+    "image": "upload/rooms/gallery1.jpg",
+    "guests_capacity": 5,
+    "beds": "2 Sofa Beds + 3 Sofas",
+    "price_per_night": "289",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:10:21.342Z",
+    "updated_at": "2026-06-26T15:34:04.942Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 2,
+  "fields": {
+    "name": "Deluxe Double Room",
+    "room_number": "A111",
+    "image": "upload/rooms/gallery2.jpg",
+    "guests_capacity": 2,
+    "beds": "1 King Bed",
+    "price_per_night": "179",
+    "is_sale": true,
+    "sale_price_per_night": "139",
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:15:27.154Z",
+    "updated_at": "2026-06-26T14:59:38.297Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 3,
+  "fields": {
+    "name": "Panoramic King Room",
+    "room_number": "D412",
+    "image": "upload/rooms/gallery3.jpg",
+    "guests_capacity": 2,
+    "beds": "1 King Bed",
+    "price_per_night": "229",
+    "is_sale": true,
+    "sale_price_per_night": "199",
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:17:47.693Z",
+    "updated_at": "2026-06-26T14:17:47.693Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 4,
+  "fields": {
+    "name": "Family Triple Room",
+    "room_number": "A112",
+    "image": "upload/rooms/gallery4.jpg",
+    "guests_capacity": 3,
+    "beds": "1 King Bed (2 Adults + 1 Child)",
+    "price_per_night": "249",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:19:52.926Z",
+    "updated_at": "2026-06-26T15:34:23.320Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 5,
+  "fields": {
+    "name": "Standard Double Room",
+    "room_number": "A113",
+    "image": "upload/rooms/gallery5.jpg",
+    "guests_capacity": 2,
+    "beds": "1 Queen Bed",
+    "price_per_night": "139",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": false,
+    "created_at": "2026-06-26T14:21:53.450Z",
+    "updated_at": "2026-11-14T08:24:49.213Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 6,
+  "fields": {
+    "name": "Studio King Room",
+    "room_number": "B111",
+    "image": "upload/rooms/gallery6.jpg",
+    "guests_capacity": 2,
+    "beds": "1 King Bed",
+    "price_per_night": "199",
+    "is_sale": true,
+    "sale_price_per_night": "149",
+    "is_in_service": false,
+    "created_at": "2026-06-26T14:23:54.746Z",
+    "updated_at": "2026-06-30T07:30:17.565Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 7,
+  "fields": {
+    "name": "Grand Family Room",
+    "room_number": "B112",
+    "image": "upload/rooms/gallery7.jpg",
+    "guests_capacity": 3,
+    "beds": "1 Family King Bed (3 Guests)",
+    "price_per_night": "268",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:25:35.495Z",
+    "updated_at": "2026-06-26T14:25:35.495Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 8,
+  "fields": {
+    "name": "Deluxe Family Suite",
+    "room_number": "B113",
+    "image": "upload/rooms/gallery8.jpg",
+    "guests_capacity": 4,
+    "beds": "1 King Bed + 1 Double Sofa Bed",
+    "price_per_night": "318",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:27:34.301Z",
+    "updated_at": "2026-06-26T14:27:34.301Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 9,
+  "fields": {
+    "name": "Classic Family Room",
+    "room_number": "D413",
+    "image": "upload/rooms/room1.jpg",
+    "guests_capacity": 4,
+    "beds": "1 King Bed + 2 Single Beds",
+    "price_per_night": "288",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:30:27.573Z",
+    "updated_at": "2026-06-26T14:30:27.573Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 10,
+  "fields": {
+    "name": "Compact Family Room",
+    "room_number": "C111",
+    "image": "upload/rooms/room2.jpg",
+    "guests_capacity": 3,
+    "beds": "1 Queen Bed + 1 Sofa",
+    "price_per_night": "169",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:33:04.737Z",
+    "updated_at": "2026-06-26T14:33:04.737Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 11,
+  "fields": {
+    "name": "Deluxe Large Room",
+    "room_number": "C112",
+    "image": "upload/rooms/room3.jpg",
+    "guests_capacity": 4,
+    "beds": "1 King Bed + 1 Queen Bed",
+    "price_per_night": "399",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:34:42.381Z",
+    "updated_at": "2026-06-26T14:34:42.381Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 12,
+  "fields": {
+    "name": "Compact Double Room",
+    "room_number": "C113",
+    "image": "upload/rooms/room4.jpg",
+    "guests_capacity": 2,
+    "beds": "2 Single Beds",
+    "price_per_night": "168",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:36:31.951Z",
+    "updated_at": "2026-06-26T14:36:31.951Z"
+  }
+},
+{
+  "model": "main.hotelroom",
+  "pk": 13,
+  "fields": {
+    "name": "Minimal Family Room",
+    "room_number": "A114",
+    "image": "upload/rooms/room5.jpg",
+    "guests_capacity": 4,
+    "beds": "1 King Bed + 2 Sofas",
+    "price_per_night": "248",
+    "is_sale": false,
+    "sale_price_per_night": null,
+    "is_in_service": true,
+    "created_at": "2026-06-26T14:37:53.424Z",
+    "updated_at": "2026-06-26T14:37:53.424Z"
+  }
+},
+{
+  "model": "reservation.reservation",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "juudyyy2077"
+    ],
+    "room": 2,
+    "arrival_date": "2026-07-02",
+    "departure_date": "2026-07-05",
+    "total_price": "417",
+    "status": "confirmed",
+    "created_at": "2026-07-01T08:02:57.357Z",
+    "updated_at": "2026-07-01T08:05:03.124Z"
+  }
+},
+{
+  "model": "reservation.reservation",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "juudyyy2077"
+    ],
+    "room": 5,
+    "arrival_date": "2026-07-03",
+    "departure_date": "2026-07-10",
+    "total_price": "903",
+    "status": "cancelled",
+    "created_at": "2026-07-01T08:12:53.086Z",
+    "updated_at": "2026-07-01T15:01:14.480Z"
+  }
+},
+{
+  "model": "reservation.reservation",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "juudyyy2077"
+    ],
+    "room": 11,
+    "arrival_date": "2026-07-18",
+    "departure_date": "2026-07-21",
+    "total_price": "1197",
+    "status": "pending",
+    "created_at": "2026-07-01T15:00:25.990Z",
+    "updated_at": "2026-07-01T15:00:25.990Z"
+  }
+}
+]
