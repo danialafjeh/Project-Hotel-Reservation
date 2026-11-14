@@ -81,13 +81,22 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'db-hotel',
-        'USER': 'YOUR-USERNAME',
-        'PASSWORD': 'YOUR-PASS',
+        'USER': 'postgres',
+        'PASSWORD': 'Danial123',
         'HOST': 'localhost',
         'PORT': '5432'
     }
 }
 
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/0",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
