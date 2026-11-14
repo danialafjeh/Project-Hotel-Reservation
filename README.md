@@ -4,7 +4,7 @@
 
 # Hotel Reservation Website
 
-Complexity : Advanced
+Complexity : Intermediate
 
 A full-stack hotel reservation web application developed with **Django (MVT Architecture)**. The project provides a complete hotel management experience, including room management, secure user authentication, reservation processing, reservation validation, and an administration panel.
 
@@ -79,6 +79,14 @@ Responsible for the complete hotel reservation workflow:
 ---
 
 # Features
+
+## Concurrency Control & Transaction Safety
+
+The reservation workflow is designed to handle concurrent requests safely and maintain database consistency. Critical reservation operations are executed within atomic database transactions using Django's `transaction.atomic()` and PostgreSQL's row-level locking mechanism through `select_for_update()`. By locking the selected room record during the reservation process, the application prevents concurrent transactions from simultaneously proceeding with conflicting availability checks and creating overlapping reservations. Reservation date ranges are validated against existing bookings to ensure that a room cannot be double-booked, even when multiple users attempt to reserve it at the same time. This approach provides reliable concurrency control, protects data integrity, and ensures that critical operations are committed or rolled back as a single unit.
+
+## Dockerized Environment
+
+The project is Dockerized using Docker Compose, with separate containers for Django, PostgreSQL, and Redis. This provides an isolated and consistent development environment, simplifies service configuration, and eliminates the need to install and configure these dependencies manually on the host machine.
 
 ## User Authentication
 
