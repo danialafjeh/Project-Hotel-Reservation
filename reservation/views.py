@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 from main.models import HotelRoom
 from .models import Reservation
 from django.contrib import messages
-from django.contrib.auth.models import User
 from datetime import datetime, date
 from django.db import transaction
 
@@ -73,7 +72,7 @@ def reservation_checkout(request):
         ).exists()
 
         if conflict:
-            messages.error('Sorry, This room is already booked for the selected dates.')
+            messages.error(request,'Sorry, This room is already booked for the selected dates.')
             return redirect('reservation_page', pk=room_id)
 
         if selected_room.is_sale:
@@ -94,8 +93,28 @@ def reservation_checkout(request):
     return redirect('home_page')
     
 def reservation_cancel(request, pk):
-    selcted_reservation = get_object_or_404(Reservation, id=pk)
-    selcted_reservation.status = 'cancelled'
-    selcted_reservation.save()
-    messages.success(request, ('Your reservation has been cancelled.'))
+    if not request.user.is_authenticated:
+        messages.error(request, 'Sorry, You must be signed in first.')
+        return redirect('home_page')
+
+    if request.method != 'POST':
+        messages.error(request, 'Sorry, This request is not allowed.')
+        return redirect('profile_page')
+
+    with transaction.atomic():
+        selected_reservation = get_object_or_404(
+            Reservation.objects.select_for_update(),
+            id=pk,
+            user=request.user
+        )
+
+        if selected_reservation.status != 'confirmed':
+            messages.error(request, 'Sorry, This reservation cannot be cancelled.')
+            return redirect('profile_page')
+
+        selected_reservation.status = 'cancelled'
+        selected_reservation.save(update_fields=['status'])
+
+    messages.success(request, 'Your reservation has been cancelled.')
     return redirect('profile_page')
+   
