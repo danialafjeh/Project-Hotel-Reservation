@@ -4,7 +4,7 @@
 
 # Hotel Reservation Website
 
-Complexity : Intermediate
+Complexity : Advanced
 
 A full-stack hotel reservation web application developed with **Django (MVT Architecture)**. The project provides a complete hotel management experience, including room management, secure user authentication, reservation processing, reservation validation, and an administration panel.
 
@@ -83,6 +83,10 @@ Responsible for the complete hotel reservation workflow:
 ## Concurrency Control & Transaction Safety
 
 The reservation workflow is designed to handle concurrent requests safely and maintain database consistency. Critical reservation operations are executed within atomic database transactions using Django's `transaction.atomic()` and PostgreSQL's row-level locking mechanism through `select_for_update()`. By locking the selected room record during the reservation process, the application prevents concurrent transactions from simultaneously proceeding with conflicting availability checks and creating overlapping reservations. Reservation date ranges are validated against existing bookings to ensure that a room cannot be double-booked, even when multiple users attempt to reserve it at the same time. This approach provides reliable concurrency control, protects data integrity, and ensures that critical operations are committed or rolled back as a single unit.
+
+## Redis Caching
+
+Redis is integrated as the application's caching backend through `django-redis` to improve response times and reduce unnecessary database queries. Frequently accessed data across public-facing pages, including room listings, promotional rooms, hotel information, and gallery content, is cached with a configurable time-to-live (TTL). Cache invalidation is handled automatically through Django model signals, ensuring that relevant cached data is refreshed whenever associated records are created, updated, or deleted. Cache deletion is scheduled using `transaction.on_commit()` to prevent invalidation before database transactions are successfully committed. This approach improves read performance while maintaining data consistency and keeping cached content synchronized with database changes.
 
 ## Dockerized Environment
 
